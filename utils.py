@@ -1,10 +1,6 @@
 import os
 import torch
-import PIL.Image
-import numpy as np
 from torch import nn
-import torch.distributed as dist
-import timm.models.hub as timm_hub
 
 """Modified from https://github.com/CompVis/taming-transformers.git"""
 
@@ -12,7 +8,6 @@ import hashlib
 import requests
 from tqdm import tqdm
 try:
-    import piq
 except:
     pass
 
